@@ -1,0 +1,75 @@
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.nav-item a:hover {
+  opacity: 0.8;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.75rem 1rem; /* Уменьшаем отступы */
+  }
+  
+  .logo a {
+    font-size: 1.3rem; /* Уменьшаем логотип */
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .nav-item a {
+    font-size: 0.9rem; /* Уменьшаем текст навигации */
+    padding: 0.25rem 0.5rem; /* Добавляем отступы для лучшего нажатия */
+  }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 1.2rem;
+  }
+
+  .nav-list {
+    gap: 0.75rem;
+  }
+
+  .nav-item a {
+    font-size: 0.85rem;
+    padding: 0.2rem 0.4rem;
+  }
+}

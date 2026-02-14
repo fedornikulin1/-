@@ -1,0 +1,118 @@
+.footer {
+  background: #2d3748;
+  color: white;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.footer-section p {
+  color: #cbd5e0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: #cbd5e0;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+.social-links a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  background: #1a202c;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #4a5568;
+  width: 100%;
+}
+
+.footer-bottom p {
+  color: #a0aec0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .footer-section h3 {
+    font-size: 1.1rem; /* Уменьшаем заголовки */
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-section p {
+    font-size: 0.9rem; /* Уменьшаем текст */
+  }
+
+  .social-links {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .social-links a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+  .footer-content {
+    padding: 1.5rem 0.75rem;
+    gap: 1rem;
+  }
+
+  .footer-section h3 {
+    font-size: 1rem;
+  }
+
+  .footer-section p {
+    font-size: 0.85rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .social-links a {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    padding: 0.75rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}

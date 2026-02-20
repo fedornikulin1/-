@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import './Header.css'; // Создадим файл со стилями
+import { Link } from 'react-router-dom'
+import './Header.css'
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="logo">
@@ -24,7 +24,7 @@ const Header = () => {
         </ul>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

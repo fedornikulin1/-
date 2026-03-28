@@ -8,12 +8,12 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h3>О нас</h3>
-          <p>Мы создаем удивительные веб-приложения</p>
+          <p>Мы продаем товары по уникальным ценам</p>
         </div>
         <div className="footer-section">
           <h3>Контакты</h3>
-          <p>Email: info@example.com</p>
-          <p>Телефон: +7 (999) 123-45-67</p>
+          <p>Email: crafter.100500@mail.ru</p>
+          <p>Телефон: +7 (912) 345-67-89</p>
         </div>
         <div className="footer-section">
           <h3>Социальные сети</h3>

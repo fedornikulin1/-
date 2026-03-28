@@ -82,3 +82,29 @@
     font-size: 0.9rem;
   }
 }
+/* Стили для страницы товаров */
+.home-page,
+.about-page,
+.contact-page,
+.auth-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.products-grid > * {
+    animation: fadeInUp 0.5s ease forwards;
+}

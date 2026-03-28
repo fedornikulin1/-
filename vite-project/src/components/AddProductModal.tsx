@@ -71,7 +71,9 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ isOpen, onClose, onAd
                             value={formData.name}
                             onChange={handleChange}
                             placeholder="Введите название товара"
+                            autoFocus
                             required
+                            
                         />
                     </div>
 
